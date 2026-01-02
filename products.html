@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | NATIONAL GOLDEN GROUP</title>
+    <meta name="description" content="Official products of NATIONAL GOLDEN GROUP - Zoom and Microsoft solutions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="products-page">
+    <header id="header" class="sticky">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">National <span>GoldenGroup</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="products.html" class="nav-active" data-i18n="nav_products">Products</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-nav">
+                    <select onchange="changeLanguage(this.value)" class="lang-select-mini">
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en" selected>EN</option>
+                    </select>
+                </li>
+                <li class="cart-nav">
+                    <button id="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header" style="padding-top: 150px; background: var(--light); text-align: center;">
+        <div class="container">
+            <div class="section-title">
+                <h1 data-i18n="products_title">Our <span>Premium Products</span></h1>
+                <div class="underline"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="products-catalog" style="padding: 5rem 0;">
+        <div class="container">
+            <!-- Pricing Toggle -->
+            <div class="pricing-toggle-container">
+                <span data-i18n="lbl_monthly">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="plan-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span data-i18n="lbl_yearly">Yearly</span>
+                <span class="save-badge" data-i18n="lbl_save_up_to">Save up to 20%</span>
+            </div>
+
+            <div class="products-grid">
+                <!-- Zoom Workplace Pro -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Zoom</div>
+                    <i class="fas fa-id-badge"></i>
+                    <h3 data-i18n="prod_zoom_pro">Zoom Workplace Pro</h3>
+                    <p class="features">
+                        <span data-i18n="prod_zoom_pro_f1">Up to 100 participants</span><br>
+                        <span data-i18n="prod_zoom_pro_f2">Unlimited whiteboards</span><br>
+                        <span data-i18n="prod_zoom_pro_f3">AI Companion included</span>
+                    </p>
+                    <p class="price" id="price-zoom-pro">$13.33 <span class="period" data-i18n="per_mo">/mo</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Zoom Pro" data-price-mo="13.33"
+                        data-price-yr="120.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- Zoom Large Meetings -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Zoom</div>
+                    <i class="fas fa-users-cog"></i>
+                    <h3 data-i18n="prod_zoom_large">Large Meetings Add-on</h3>
+                    <p class="features">
+                        <span data-i18n="prod_zoom_large_f1">Up to 500 participants</span><br>
+                        <span data-i18n="prod_zoom_large_f2">Custom branding options</span><br>
+                        <span data-i18n="prod_zoom_large_f3">Advanced registration</span>
+                    </p>
+                    <p class="price" id="price-zoom-large">$50.00 <span class="period" data-i18n="per_mo">/mo</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Zoom Large Meetings" data-price-mo="50.00"
+                        data-price-yr="480.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+                <!-- Microsoft 365 -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Microsoft</div>
+                    <i class="fab fa-microsoft"></i>
+                    <h3 data-i18n="prod_m365">Microsoft 365 Business</h3>
+                    <p class="features">
+                        <span data-i18n="prod_m365_f1">Full Office Suite & Teams</span><br>
+                        <span data-i18n="prod_m365_f2">1TB Cloud Storage</span><br>
+                        <span data-i18n="prod_m365_f3">Advanced Security</span>
+                    </p>
+                    <p class="price" id="price-m365">$12.50 <span class="period" data-i18n="per_mo">/mo</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Microsoft 365" data-price-mo="12.50"
+                        data-price-yr="135.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- Windows 11 -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Microsoft</div>
+                    <i class="fas fa-window-maximize"></i>
+                    <h3 data-i18n="prod_win11">Windows 11 Professional</h3>
+                    <p class="features">
+                        <span data-i18n="prod_win11_f1">For small & mid-size business</span><br>
+                        <span data-i18n="prod_win11_f2">Enterprise-grade Security</span><br>
+                        <span data-i18n="prod_win11_f3">Remote Desktop enabled</span>
+                    </p>
+                    <p class="price" id="price-win11">$199.99</p>
+                    <button class="btn btn-primary buy-now" data-product="Windows 11 Pro" data-price-mo="199.99"
+                        data-price-yr="199.99" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- Zoom -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Zoom</div>
+                    <i class="fas fa-video"></i>
+                    <h3 data-i18n="prod_zoom">Zoom Workplace Business Plus</h3>
+                    <p class="features">
+                        <span data-i18n="prod_zoom_f1">Up to 300 Participants</span><br>
+                        <span data-i18n="prod_zoom_f2">Unlimited Whiteboards</span><br>
+                        <span data-i18n="prod_zoom_f3">Zoom Phone included</span>
+                    </p>
+                    <p class="price" id="price-zoom-plus">$22.49 <span class="period" data-i18n="per_mo">/mo</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Zoom Business Plus" data-price-mo="22.49"
+                        data-price-yr="220.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- Kaspersky -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">Kaspersky</div>
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-i18n="prod_kasp">Kaspersky Plus</h3>
+                    <p class="features">
+                        <span data-i18n="prod_kasp_f1">Advanced Malware Protection</span><br>
+                        <span data-i18n="prod_kasp_f2">Unlimited VPN included</span><br>
+                        <span data-i18n="prod_kasp_f3">Safe Money features</span>
+                    </p>
+                    <p class="price" id="price-kaspersky">$59.99 <span class="period" data-i18n="per_yr">/yr</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Kaspersky Plus" data-price-mo="5.99"
+                        data-price-yr="59.99" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- ESET -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">ESET</div>
+                    <i class="fas fa-user-lock"></i>
+                    <h3 data-i18n="prod_eset">ESET Home Security Premium</h3>
+                    <p class="features">
+                        <span data-i18n="prod_eset_f1">Legendary Antivirus technology</span><br>
+                        <span data-i18n="prod_eset_f2">Password Manager included</span><br>
+                        <span data-i18n="prod_eset_f3">Secure Data encryption</span>
+                    </p>
+                    <p class="price" id="price-eset">$59.99 <span class="period" data-i18n="per_yr">/yr</span></p>
+                    <button class="btn btn-primary buy-now" data-product="ESET Home Security" data-price-mo="5.99"
+                        data-price-yr="59.99" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- ANY.RUN -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">ANY.RUN</div>
+                    <i class="fas fa-bug"></i>
+                    <h3 data-i18n="prod_any">ANY.RUN Hunter</h3>
+                    <p class="features">
+                        <span data-i18n="prod_any_f1">Interactive Malware Sandbox</span><br>
+                        <span data-i18n="prod_any_f2">Network Traffic analysis</span><br>
+                        <span data-i18n="prod_any_f3">Process behavior tracking</span>
+                    </p>
+                    <p class="price" id="price-anyrun">$89.00 <span class="period" data-i18n="per_mo">/mo</span></p>
+                    <button class="btn btn-primary buy-now" data-product="ANY.RUN Hunter" data-price-mo="89.00"
+                        data-price-yr="890.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- Stata -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">STATA</div>
+                    <i class="fas fa-chart-line"></i>
+                    <h3 data-i18n="prod_stata">Stata/MP (2-core)</h3>
+                    <p class="features">
+                        <span data-i18n="prod_stata_f1">Fastest version of Stata</span><br>
+                        <span data-i18n="prod_stata_f2">Parallel computing support</span><br>
+                        <span data-i18n="prod_stata_f3">For large datasets</span>
+                    </p>
+                    <p class="price" id="price-stata">$1085.00 <span class="period" data-i18n="per_yr">/yr</span></p>
+                    <button class="btn btn-primary buy-now" data-product="Stata/MP 2-core" data-price-mo="110.00"
+                        data-price-yr="1085.00" data-i18n="btn_buy">Buy Now</button>
+                </div>
+
+                <!-- R-Studio -->
+                <div class="product-card glass-card">
+                    <div class="product-badge">R-Studio</div>
+                    <i class="fas fa-file-medical-alt"></i>
+                    <h3 data-i18n="prod_rstudio">R-Studio Standard</h3>
+                    <p class="features">
+                        <span data-i18n="prod_rstudio_f1">Advanced Data Recovery</span><br>
+                        <span data-i18n="prod_rstudio_f2">FAT/NTFS/HFS+ Support</span><br>
+                        <span data-i18n="prod_rstudio_f3">RAID Recovery included</span>
+                    </p>
+                    <p class="price" id="price-rstudio">$79.99</p>
+                    <button class="btn btn-primary buy-now" data-product="R-Studio Standard" data-price-mo="8.99"
+                        data-price-yr="79.99" data-i18n="btn_buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="language-switcher-bottom">
+        <div class="container lang-switcher-box">
+            <h3 data-i18n="select_lang">Select Language</h3>
+            <div class="lang-btns">
+                <button onclick="changeLanguage('uz')" class="lang-btn">O'zbekcha</button>
+                <button onclick="changeLanguage('ru')" class="lang-btn">Русский</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">English</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Checkout Side Panel -->
+    <div id="checkout-modal" class="checkout-panel">
+        <div class="panel-overlay"></div>
+        <div class="panel-content glass-card">
+            <div class="panel-header">
+                <h2 data-i18n="mdl_checkout">Checkout</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+
+            <div class="panel-body">
+                <!-- Left: Order Summary -->
+                <div class="checkout-summary-section">
+                    <h3 data-i18n="lbl_order_summary">Order Summary</h3>
+                    <div id="cart-items-list" class="cart-items-list">
+                        <!-- Items will be injected here -->
+                    </div>
+                    <div class="cart-total-wide">
+                        <div class="total-row">
+                            <span data-i18n="lbl_subtotal">Subtotal</span>
+                            <span id="summary-subtotal">$0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span data-i18n="lbl_tax">Tax (0%)</span>
+                            <span>$0.00</span>
+                        </div>
+                        <hr>
+                        <div class="total-row final-total">
+                            <strong data-i18n="lbl_total">Total</strong>
+                            <strong id="selected-product-price">$0.00</strong>
+                        </div>
+                    </div>
+
+                    <div class="trust-badges">
+                        <i class="fas fa-lock"></i> <span data-i18n="lbl_secure">Secure Payment</span>
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="lbl_guarantee">Money Back Guarantee</span>
+                    </div>
+                </div>
+
+                <!-- Right: Payment Form -->
+                <div class="checkout-form-section">
+                    <form id="payment-form">
+                        <div class="form-step-title" data-i18n="step_1">1. Shipping Information</div>
+                        <div class="form-group">
+                            <label data-i18n="lbl_name">Full Name</label>
+                            <input type="text" data-i18n-placeholder="ph_john" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="lbl_addr">Shipping Address</label>
+                            <input type="text" data-i18n-placeholder="ph_addr" placeholder="Your full address"
+                                id="checkout-address" required>
+                        </div>
+                        <div class="form-group" id="zoom-email-group" style="display: none;">
+                            <label data-i18n="lbl_zoom_email">Zoom Account Email</label>
+                            <input type="email" id="zoom-account-email" placeholder="email@example.com">
+                        </div>
+
+                        <div class="form-step-title" data-i18n="step_2">2. Payment Method</div>
+                        <div class="form-group input-with-icon">
+                            <label data-i18n="lbl_card">Card Number</label>
+                            <div class="input-container">
+                                <input type="text" placeholder="0000 0000 0000 0000" id="card-number" required>
+                                <i class="far fa-credit-card input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="lbl_expiry">Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" id="card-expiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="lbl_cvv">CVV</label>
+                                <input type="text" placeholder="123" id="card-cvc" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-premium" data-i18n="btn_pay">Complete
+                            Purchase</button>
+                    </form>
+                    <div id="payment-status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo-box">
+                <img src="logo.jpg" alt="National Golden Group" class="footer-logo">
+                <p class="footer-brand-text">National Golden Group</p>
+            </div>
+            <p data-i18n="footer_copy">&copy; 2026 NATIONAL GOLDEN GROUP. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <button id="chatbot-toggle" class="chatbot-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div id="chatbot-window" class="chatbot-window glass-card">
+            <div class="chatbot-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="bot-name-status">
+                        <h4 data-i18n="bot_name">National Assistant</h4>
+                        <span data-i18n="bot_status">Online</span>
+                    </div>
+                </div>
+                <button id="chatbot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <p data-i18n="bot_greeting">Hello! I'm your National Golden Group assistant. How can I help you
+                        today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chat-input" data-i18n-placeholder="chat_ph" placeholder="Type your message...">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner glass-card">
+        <div class="cookie-content">
+            <i class="fas fa-cookie-bite"></i>
+            <p data-i18n="cookie_msg">We use cookies to enhance your experience. By continuing to visit this site you
+                agree to our use of cookies.</p>
+        </div>
+        <div class="cookie-actions">
+            <button id="accept-cookies" class="btn btn-primary" data-i18n="btn_accept">Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

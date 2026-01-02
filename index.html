@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATIONAL GOLDEN GROUP | Professional IT Solutions</title>
+    <meta name="description"
+        content="NATIONAL GOLDEN GROUP - Professional IT Solutions, Cyber Security, and Infrastructure.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">National <span>GoldenGroup</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-nav">
+                    <select onchange="changeLanguage(this.value)" class="lang-select-mini">
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en" selected>EN</option>
+                    </select>
+                </li>
+                <li class="cart-nav">
+                    <button id="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="hero_title">Leading Excellence in <span>Digital Solutions</span></h1>
+                <p data-i18n="hero_desc">NATIONAL GOLDEN GROUP delivers high-performance IT infrastructure,
+                    cybersecurity, and cloud services
+                    tailored for your business growth.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary" data-i18n="btn_services">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glass-container">
+                    <!-- Image mockup will go here -->
+                    <div class="mock-grid">
+                        <div class="mock-card"></div>
+                        <div class="mock-card highlight"></div>
+                        <div class="mock-card"></div>
+                        <div class="mock-card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about_title">About <span>Us</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_desc1">NATIONAL GOLDEN GROUP is a premier Value Added Distributor and IT
+                        solutions provider. Inspired by
+                        the best in the industry, we bring top-tier technologies to the local and regional markets.</p>
+                    <p data-i18n="about_desc2">We are a proud partner and distributor for world-class brands including
+                        Zoom, Microsoft, Kaspersky,
+                        Eset, ANY.RUN, STATA, and many others.</p>
+                    <p data-i18n="about_ssl">We also provide various types of SSL certificates to ensure the highest
+                        level of security for your websites and digital infrastructure.</p>
+                    <p data-i18n="about_desc3">Our mission is to empower businesses with secure, scalable, and efficient
+                        IT ecosystems that
+                        drive innovation.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>4+</h3>
+                        <p data-i18n="stat_years">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p data-i18n="stat_clients">Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p data-i18n="stat_vendors">Global Vendors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="services_title">Our <span>Core Services</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-i18n="svc_cyber_title">Cyber Security</h3>
+                    <p data-i18n="svc_cyber_desc">Advanced protection for your digital assets against evolving threats.
+                    </p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3 data-i18n="svc_cloud_title">Cloud Infrastructure</h3>
+                    <p data-i18n="svc_cloud_desc">Scalable cloud solutions that enhance business agility and
+                        performance.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3 data-i18n="svc_net_title">Network Solutions</h3>
+                    <p data-i18n="svc_net_desc">Robust networking infrastructure for seamless communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="faq_title">Frequently Asked <span>Questions</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q1">What services does National Golden Group provide?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a1">We specialize in Cybersecurity, Cloud Infrastructure, and Network
+                            Solutions. We also provide software licensing for major brands like Microsoft, Zoom,
+                            Kaspersky, and ESET.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q2">Where is your office located?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a2">Our office is located at Uzbekistan, Bukhara, Gijduvan, Alpomish 1. You
+                            are welcome to visit us!</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q3">Do you provide SSL certificates?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a3">Yes, we provide various types of SSL certificates to ensure the highest
+                            level of security for your websites and digital infrastructure.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q4">How can I contact sales?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a4">You can contact our sales team via email at
+                            mexri@tuit.uz or by calling +998 91 828 22 08 / +998 91 780 00 35.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products catalog moved to products.html -->
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="testi_title">Client <span>Feedback</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item glass-card active">
+                    <div class="testi-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p data-i18n="testi_q1">National Golden Group has transformed our IT infrastructure. Their
+                            cybersecurity solutions are top-notch and reliable.</p>
+                        <div class="testi-author">
+                            <h4 data-i18n="testi_a1">Azizbek G'ofurov</h4>
+                            <span data-i18n="testi_p1">IT Director, TechMind</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item glass-card">
+                    <div class="testi-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p data-i18n="testi_q2">The cloud migration was seamless. Highly recommend their professional
+                            team for any IT project.</p>
+                        <div class="testi-author">
+                            <h4 data-i18n="testi_a2">Elena Smirnova</h4>
+                            <span data-i18n="testi_p2">CEO, Global Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item glass-card">
+                    <div class="testi-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p data-i18n="testi_q3">Professional service and great support. They are our go-to partner for
+                            all software licensing needs.</p>
+                        <div class="testi-author">
+                            <h4 data-i18n="testi_a3">Umar Shodiyev</h4>
+                            <span data-i18n="testi_p3">Procurement Manager, Innovate Uz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="how_title">How it <span>Works</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="process-grid">
+                <div class="process-item glass-card card-3d">
+                    <div class="process-step-num">01</div>
+                    <div class="process-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 data-i18n="how_step1_t">Choose & Order</h3>
+                    <p data-i18n="how_step1_d">Select your digital product or subscription and proceed to secure
+                        checkout.</p>
+                </div>
+                <div class="process-item glass-card card-3d">
+                    <div class="process-step-num">02</div>
+                    <div class="process-icon"><i class="fas fa-key"></i></div>
+                    <h3 data-i18n="how_step2_t">License Delivery</h3>
+                    <p data-i18n="how_step2_d">For Zoom: We assign the license to your email. For others: You receive a
+                        key via email.</p>
+                </div>
+                <div class="process-item glass-card card-3d">
+                    <div class="process-step-num">03</div>
+                    <div class="process-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 data-i18n="how_step3_t">Instant Activate</h3>
+                    <p data-i18n="how_step3_d">Start using your premium features immediately with professional support
+                        if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vendors">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="vendors_title">Our <span>Premium Partners</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="vendors-grid">
+                <div class="vendor-card glass-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg"
+                        alt="Zoom">
+                    <span data-i18n="vnd_zoom">Official Partner</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+                    <span data-i18n="vnd_ms">Authorized Seller</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="C:/Users/Probook/.gemini/antigravity/brain/0221e538-5eb8-4ee5-8766-8087324a134a/kaspersky_logo_ideal_1767311281383.png"
+                        alt="Kaspersky">
+                    <span data-i18n="vnd_kasp">Security Partner</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="C:/Users/Probook/.gemini/antigravity/brain/0221e538-5eb8-4ee5-8766-8087324a134a/eset_logo_colored_1767310744119.png"
+                        alt="Eset">
+                    <span data-i18n="vnd_eset">Gold Partner</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="C:/Users/Probook/.gemini/antigravity/brain/0221e538-5eb8-4ee5-8766-8087324a134a/anyrun_logo_colored_1767310758060.png"
+                        alt="ANY.RUN">
+                    <span data-i18n="vnd_any">Security Partner</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="C:/Users/Probook/.gemini/antigravity/brain/0221e538-5eb8-4ee5-8766-8087324a134a/stata_logo_colored_1767310772172.png"
+                        alt="STATA">
+                    <span data-i18n="vnd_stata">Official Distributor</span>
+                </div>
+                <div class="vendor-card glass-card">
+                    <img src="C:/Users/Probook/.gemini/antigravity/brain/0221e538-5eb8-4ee5-8766-8087324a134a/rstudio_logo_ideal_1767311294505.png"
+                        alt="R-Studio">
+                    <span data-i18n="vnd_rstudio">Authorized Partner</span>
+                </div>
+            </div>
+            <p class="vendor-footer-text" data-i18n="vendors_footer">and 50+ other world-leading IT brands...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="contact_title">Contact <span>Us</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>mexri@tuit.uz</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p data-i18n="contact_addr">Uzbekistan, Bukhara, Gijduvan, Alpomish 1</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+998 91 828 22 08</p>
+                        <p>+998 91 780 00 35</p>
+                    </div>
+                </div>
+                <div class="contact-form-container glass-card">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" data-i18n-placeholder="ph_name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" data-i18n-placeholder="ph_email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" data-i18n-placeholder="ph_msg" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="language-switcher-bottom">
+        <div class="container lang-switcher-box">
+            <h3 data-i18n="select_lang">Select Language</h3>
+            <div class="lang-btns">
+                <button onclick="changeLanguage('uz')" class="lang-btn">O'zbekcha</button>
+                <button onclick="changeLanguage('ru')" class="lang-btn">Русский</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">English</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo-box">
+                <img src="logo.jpg" alt="National Golden Group" class="footer-logo">
+                <p class="footer-brand-text">National Golden Group</p>
+            </div>
+            <p data-i18n="footer_copy">&copy; 2026 NATIONAL GOLDEN GROUP. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- Premium Checkout Side Panel -->
+    <div id="checkout-modal" class="checkout-panel">
+        <div class="panel-overlay"></div>
+        <div class="panel-content glass-card">
+            <div class="panel-header">
+                <h2 data-i18n="mdl_checkout">Checkout</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+
+            <div class="panel-body">
+                <!-- Left: Order Summary -->
+                <div class="checkout-summary-section">
+                    <h3 data-i18n="lbl_order_summary">Order Summary</h3>
+                    <div id="cart-items-list" class="cart-items-list">
+                        <!-- Items will be injected here -->
+                    </div>
+                    <div class="cart-total-wide">
+                        <div class="total-row">
+                            <span data-i18n="lbl_subtotal">Subtotal</span>
+                            <span id="summary-subtotal">$0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span data-i18n="lbl_tax">Tax (0%)</span>
+                            <span>$0.00</span>
+                        </div>
+                        <hr>
+                        <div class="total-row final-total">
+                            <strong data-i18n="lbl_total">Total</strong>
+                            <strong id="selected-product-price">$0.00</strong>
+                        </div>
+                    </div>
+
+                    <div class="trust-badges">
+                        <i class="fas fa-lock"></i> <span data-i18n="lbl_secure">Secure Payment</span>
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="lbl_guarantee">Money Back Guarantee</span>
+                    </div>
+                </div>
+
+                <!-- Right: Payment Form -->
+                <div class="checkout-form-section">
+                    <form id="payment-form">
+                        <div class="form-step-title" data-i18n="step_1">1. Shipping Information</div>
+                        <div class="form-group">
+                            <label data-i18n="lbl_name">Full Name</label>
+                            <input type="text" data-i18n-placeholder="ph_john" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="lbl_addr">Shipping Address</label>
+                            <input type="text" data-i18n-placeholder="ph_addr" placeholder="Your full address"
+                                id="checkout-address" required>
+                        </div>
+                        <div class="form-group" id="zoom-email-group" style="display: none;">
+                            <label data-i18n="lbl_zoom_email">Zoom Account Email</label>
+                            <input type="email" id="zoom-account-email" placeholder="email@example.com">
+                        </div>
+
+                        <div class="form-step-title" data-i18n="step_2">2. Payment Method</div>
+                        <div class="form-group input-with-icon">
+                            <label data-i18n="lbl_card">Card Number</label>
+                            <div class="input-container">
+                                <input type="text" placeholder="0000 0000 0000 0000" id="card-number" required>
+                                <i class="far fa-credit-card input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="lbl_expiry">Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" id="card-expiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="lbl_cvv">CVV</label>
+                                <input type="text" placeholder="123" id="card-cvc" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-premium" data-i18n="btn_pay">Complete
+                            Purchase</button>
+                    </form>
+                    <div id="payment-status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <button id="chatbot-toggle" class="chatbot-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div id="chatbot-window" class="chatbot-window glass-card">
+            <div class="chatbot-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="bot-name-status">
+                        <h4 data-i18n="bot_name">National Assistant</h4>
+                        <span data-i18n="bot_status">Online</span>
+                    </div>
+                </div>
+                <button id="chatbot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <p data-i18n="bot_greeting">Hello! I'm your National Golden Group assistant. How can I help you
+                        today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chat-input" data-i18n-placeholder="chat_ph" placeholder="Type your message...">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snow Overlay -->
+    <canvas id="snow-canvas"></canvas>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner glass-card">
+        <div class="cookie-content">
+            <i class="fas fa-cookie-bite"></i>
+            <p data-i18n="cookie_msg">We use cookies to enhance your experience. By continuing to visit this site you
+                agree to our use of cookies.</p>
+        </div>
+        <div class="cookie-actions">
+            <button id="accept-cookies" class="btn btn-primary" data-i18n="btn_accept">Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
